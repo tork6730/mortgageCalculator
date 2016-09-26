@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>jQuery Mortgage Calculator</title>
+</head>
+<body class= container>
+	<fieldset>
+	<legend class= "text-center col-sm-7 col-sm-offset-3">jQuery Mortgage Calculator</legend>
+		<div class="form-horizontal">
+
+			<div class="form-group">
+				<label class= "col-sm-3 control-label">Loan Balance</label>
+				<div class="col-sm-7">
+					<input type= value id= "loanBalance" class='form-control'></input>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class= "col-sm-3 control-label">Interest Rate (%)</label>
+				<div class="col-sm-7">
+					<input type= text id= "interestRate" class='form-control'></input>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class= "col-sm-3 control-label">Loan Term (years)</label>
+				<div class="col-sm-7">
+					<input type= text id= "loanTerm" class='form-control'></input>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class= "col-sm-3 control-label">Period</label>
+				<div class="col-sm-7">
+					<select id='cycle' class='form-control'></select>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class= "col-sm-2 col-sm-offset-3 control-label">
+					<button type="button" id ="button" class= "btn btn-primary form-control">Calculate</button>
+				</div>
+			</div>
+			<p id= "result"></p>
+		</div>	
+	</fieldset>
+</body>
+	<script type="text/javascript" src='index.js'></script>
+</html>
